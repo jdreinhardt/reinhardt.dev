@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ffmpeg on Derek Reinhardt</title>
+    <link>https://www.derekreinhardt.com/tags/ffmpeg/</link>
+    <description>Recent content in Ffmpeg on Derek Reinhardt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jul 2014 02:18:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.derekreinhardt.com/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Video Encoding Made Simplier</title>
+      <link>https://www.derekreinhardt.com/posts/video-encode-made-simplier/</link>
+      <pubDate>Fri, 11 Jul 2014 02:18:59 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/posts/video-encode-made-simplier/</guid>
+      <description>I&amp;rsquo;m proud to announce that I have completed the next version on a pet project I have been working on for a long time. I haven&amp;rsquo;t been working on it non-stop, in fact it sat for a couple of years, but either way it is now here, better than ever.
+What is it you ask? A ProRes and H.265 encoder for Windows. I call it Frost.
+You can download it at https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

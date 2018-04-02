@@ -1,0 +1,21 @@
+baseURL = "https://www.derekreinhardt.com/"
+languageCode = "en-us"
+title = "Derek Reinhardt"
+theme = "pixyll"
+canonifyurls = true
+contentdir = "content"
+publishdir = "public"
+canonifyUrls = true
+
+[indexes]
+	category = "categories"
+	tag = "tags"
+
+[params]
+	description = "The musings of Derek Reinhardt"
+	twitter_username = "jderekreinhardt"
+	github_username = "jdreinhardt"
+	bitbucket_username = "MylarShoe"
+	paginate = 10
+	#google_analytics_id = 
+	#search_engine = true

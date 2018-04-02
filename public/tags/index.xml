@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Derek Reinhardt</title>
+    <link>https://www.derekreinhardt.com/tags/</link>
+    <description>Recent content in Tags on Derek Reinhardt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Jun 2014 00:53:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.derekreinhardt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automation</title>
+      <link>https://www.derekreinhardt.com/tags/automation/</link>
+      <pubDate>Sun, 22 Jun 2014 00:53:42 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dit</title>
+      <link>https://www.derekreinhardt.com/tags/dit/</link>
+      <pubDate>Sun, 22 Jun 2014 00:53:42 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/dit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Encode</title>
+      <link>https://www.derekreinhardt.com/tags/encode/</link>
+      <pubDate>Fri, 11 Jul 2014 02:18:59 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/encode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ffmpeg</title>
+      <link>https://www.derekreinhardt.com/tags/ffmpeg/</link>
+      <pubDate>Fri, 11 Jul 2014 02:18:59 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Filmmaking</title>
+      <link>https://www.derekreinhardt.com/tags/filmmaking/</link>
+      <pubDate>Sat, 16 Jan 2016 01:31:00 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/filmmaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://www.derekreinhardt.com/tags/open-source/</link>
+      <pubDate>Sat, 16 Jan 2016 01:31:00 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prores</title>
+      <link>https://www.derekreinhardt.com/tags/prores/</link>
+      <pubDate>Fri, 11 Jul 2014 02:18:59 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/prores/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://www.derekreinhardt.com/tags/python/</link>
+      <pubDate>Sun, 22 Jun 2014 00:53:42 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 10</title>
+      <link>https://www.derekreinhardt.com/tags/windows-10/</link>
+      <pubDate>Wed, 28 Jan 2015 22:56:08 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/tags/windows-10/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

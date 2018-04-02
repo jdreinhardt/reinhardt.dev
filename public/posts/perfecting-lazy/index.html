@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Perfecting Lazy | Derek Reinhardt</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="https://www.derekreinhardt.com/posts/perfecting-lazy/">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" type="text/css" href="https://www.derekreinhardt.com//css/combined-min.css">
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="https://www.derekreinhardt.com/" class="site-title">Derek Reinhardt</a>
+      <nav class="site-nav right">
+      <a href="https://www.derekreinhardt.com/">Home</a>
+<a href="https://www.derekreinhardt.com/about/">About</a>
+<a href="https://www.derekreinhardt.com/frost/">Frost</a>
+<a href="https://www.derekreinhardt.com/contact/">Contact</a>
+</form>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2">Perfecting Lazy</h1>
+        <span class="post-meta">Jun 22, 2014 by derek</span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <p>I just finished up work on a production last week. It was a great project that will is in the editing room right now. I had some fun designing the workflow for this project, and I will probably right about it in the future because it was a system that I had never tried before and it worked near flawlessly. Instead of that though I wanted to write about something a little more technical today.</p>
+
+<p>On this latest production I was working as the DIT (Digital Imaging Technician) while on set. While the roles and responsibilities of this position are large and varied, one of the most important tasks is to secure the footage. That means every byte of data that is recorded by the camera, and audio recorder needs to be backed up, verified, and secured. For me typically that means a lot of manual copying and manually verifying everything. It was a long and tedious process, so I decided to try and automate it.</p>
+
+<p>There is a great utility called rsync in the Unix world that does file synchronization. It does a lot more than what I used it for, but for my purposes it was the simpliest method since it comes preinstalled on Mac. Now what I could have done is just have a bunch of rsync commands typed up like this</p>
+
+<p><code>rsync -arv &ndash;exclude &lsquo;/01. RAW Assets&rsquo; /Volumes/BEYOND_RAID/01.\ Video\ Assets/ /Volumes/Beyond_BU01/01.\ Video\ Assets</code></p>
+
+<p>and just copy them into the terminal to run them when I needed, but that allowed for a lot of user error, so I busted out Python.</p>
+
+<p>Python is a scripted language that allows for fast development, and testing since the code does not need to be compiled before running. Python also has the added benefit of being preinstalled on Mac, so in an environment where I had little access to the internet it made it the obvious solution (And who wants to write this in bash?).</p>
+
+<p><strong>A disclaimer for the code you are about to look at. It was all written on set, so it is not very optimized, or clean. I was just trying to get it to work correctly as fast as possible.</strong></p>
+
+<p>Anyway, my first thought was that I should just make it so that it would backup everything to the Shuttle Drives that we are using. Then I don&rsquo;t have to worry, everything makes its way to the backup drive, as long as it makes it onto the main RAID we were using. The raw footage from the camera was already being backed up to the drive using a program that copied and verified everything for me. (We were using a RED Epic for the shoot with DoubleData as the primary data management system). Lets look at where that one started.</p>
+
+<pre><code>import os
+os.system(&quot;rsync -arv --exclude '/01. RAW Assets' /Volumes/BEYOND_RAID/01.\ Video\ Assets/ /Volumes/Beyond_BU01/01.\ Video\ Assets&quot;)
+os.system(&quot;rsync -arv /Volumes/BEYOND_RAID/02.\ Audio\ Assets/ /Volumes/Beyond_BU01/02.\ Audio\ Assets&quot;)    
+</code></pre>
+
+<p>Python is really fast, so we load the OS layer
+<code>import os</code>, then call a system function <code>os.system(&hellip;)</code> that is the rsync command. Simple and effective. Then I save that file as backup.py and can run it in the terminal like this <code>python backup.py</code> \n\nThat seemed to easy though. With a Mac you can change the extension of the file and make it run on a double click. You have to make a few changes first to the file. You add this <code>#! /usr/bin/env python</code> to the top of your file, save it. Then in terminal run this <code>chmod u+x backup.py</code> After all that just change the .py to .command and I had a fully functional double click and run program that would backup my assets to a secondary drive.</p>
+
+<p>After doing this I had the programming itch, so I decided to see what else I could automate. I started with getting the sound files from the CF card they were recorded to, to the main RAID.</p>
+
+<p>I knew that every card that came out of the recorder was titled the same thing, so the first thing I did was have it look for the card. If it found it, it started the copy, if not it asked for the drive to be input (sometimes they weren&rsquo;t named right, so it made the automation still work). I also knew that since we were dumping audio with every video dump, that the card numbers should match, but rather than having it look and check for the mag number I just had it add 1 sequentially. Not ideal, but I was writing this while trying to use it, speed was a factor.</p>
+
+<p>After that it goes through the card and copies every .WAV audio file over to the RAID. This one took a little to get right, but once it was working it never gave me an issue.</p>
+
+<pre><code>import os, os.path
+
+path = &quot;&quot;
+dest = '/Volumes/BEYOND_RAID/02. Audio Assets/01. RAW Audio/Day 11/'
+dest_2 = dest.replace(&quot; &quot;,&quot;\ &quot;)
+
+if os.path.exists(\&quot;/Volumes/664 CF\&quot;):	
+	path = &quot;/Volumes/664 CF &quot;
+else:
+	path = raw_input(&quot;Enter Drive Path: &quot;)
+	clean_path = path[:-1].replace(&quot;\\&quot;,&quot;&quot;)
+
+card = &quot;&quot;
+for dir in os.listdir(dest):
+	card = dir
+	card_data = card[-2:].replace(&quot; &quot;,&quot;&quot;)
+	card_num = int(card_data) + 1
+
+	dest_folder = dest_2 + &quot;Card\ &quot; + str(card_num)
+	mkdir = &quot;mkdir &quot; + dest_folder
+	os.system(mkdir)
+
+	for file in os.listdir(clean_path):
+		if file.endswith(&quot;.wav&quot;) or file.endswith(&quot;.WAV&quot;):
+		cp = &quot;cp -v &quot; + path[:-1] + &quot;/&quot; + file + &quot; &quot; + dest_folder
+		os.system(cp)
+</code></pre>
+
+<p>Once I got that working, things become much easier. I could rest assured that everything was copying to where it needed to go, and that I just had to do a quick manual verify to make sure it all was right. It was about this time that someone asked what I was doing. After explaining, he just laughed and said I was perfectly being as lazy as possible. I said I was optimizing.</p>
+
+<p>Again the itch came. We had an Atomos Samurai Blade attached to the camera recording the edit proxies, so using the audio above as a template I adjusted it to copy the proxies to the RAID. I did change it to actually get the mag name though to copy it into a properly labeled folder.</p>
+
+<pre><code>for dir in os.listdir(source):
+	if dir == &quot;ProjectInformation.txt&quot;:
+		print &quot;&quot;
+	else:
+		mag = dir
+</code></pre>
+
+<p>Not pretty, but this searched through and found the folder name of the latest camera mag that had been copied.</p>
+
+<p>After this, I had all these great scripts that worked, but all had to be run one at a time to get them working properly. I could have that, so I made a script that combined all three of those scripts into one file. I tried to clean up my code when I was doing this, so I broke out my copy and folder creator functions. I also added in some colored notation, so that I could see exactly where in the process I was. The other big thing I did was make it so that I didn&rsquo;t have to manually change the day on each destination folder, just once at the beginning of the file. It worked great.</p>
+
+<p>Once I had all this working, I was free to spend less time focusing on copying files, and more time making sure those files where perfect and verified.</p>
+
+<p>I was free, but I had one last thing I could simplify for myself. At the begining of each day I had to make a bunch of folders for the day, so that everything went where it could easily be found, so I did a quick script that made all those folders for me.</p>
+
+<p>I know this was long and program-y, but thanks for sticking with it. I promise not everything will be like this. I just wanted to document this process for myself. Below is a link to download a ZIP file with all the scripts, so you can look them over, or use them if you want.</p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/6910936/blog/Scripts.zip">Download all the Scripts Here</a></p>
+
+      </article>
+
+      <p class="post-meta">Tags:&nbsp;
+        
+            
+            <a href="https://www.derekreinhardt.com/tags/dit">dit</a>
+        
+            ,&nbsp;
+            <a href="https://www.derekreinhardt.com/tags/python">python</a>
+        
+            ,&nbsp;
+            <a href="https://www.derekreinhardt.com/tags/automation">automation</a>
+        
+      </p>
+
+      
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="https://www.derekreinhardt.com/index.xml"></a>
+
+<a class="fa fa-twitter twitter" href="https://twitter.com/jderekreinhardt"></a>
+
+
+<a class="fa fa-github github" href="https://github.com/jdreinhardt"></a>
+
+
+<a class="fa fa-bitbucket bitbucket" href="https://bitbucket.org/MylarShoe"></a>
+
+</nav>
+
+          <small>
+            Copyright &#169; 2018<br>
+            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> &amp; <a href="https://github.com/azmelanar/hugo-theme-pixyll" target="_blank">Pixyll</a>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="https://www.derekreinhardt.com/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+</body>
+</html>
+

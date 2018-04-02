@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Derek Reinhardt</title>
+    <link>https://www.derekreinhardt.com/posts/</link>
+    <description>Recent content in Posts on Derek Reinhardt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jan 2016 01:31:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.derekreinhardt.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Filmmaking and Open Source</title>
+      <link>https://www.derekreinhardt.com/posts/filmmaking-and-open-source/</link>
+      <pubDate>Sat, 16 Jan 2016 01:31:00 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/posts/filmmaking-and-open-source/</guid>
+      <description>I have a crazy idea. I&amp;rsquo;m not sure if it will work, but I&amp;rsquo;m going to try and see if I can&amp;rsquo;t make it a reality. I want to make an open-source film, in a fashion I don&amp;rsquo;t think has been attempted.
+I should probably explain what open-source is before I get to far ahead of myself. Open-source is a concept that is heavily used in the programming world. The idea is that all of the source code for a program is available for anyone to download and tweak however they want.</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 and the Future</title>
+      <link>https://www.derekreinhardt.com/posts/windows-10-and-the-future/</link>
+      <pubDate>Wed, 28 Jan 2015 22:56:08 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/posts/windows-10-and-the-future/</guid>
+      <description>Windows 10 has been out for a little over 4 months now. I&amp;rsquo;ve had it installed on a vitual machine since then. I like to see what&amp;rsquo;s coming, and get a grasp on it. In the past, with Windows 7, 8, and the 8.1, and the 10 (up to now) betas that is all I&amp;rsquo;ve every done. Then my desktop started giving me problems.
+Let me lay a little bit of ground work.</description>
+    </item>
+    
+    <item>
+      <title>Video Encoding Made Simplier</title>
+      <link>https://www.derekreinhardt.com/posts/video-encode-made-simplier/</link>
+      <pubDate>Fri, 11 Jul 2014 02:18:59 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/posts/video-encode-made-simplier/</guid>
+      <description>I&amp;rsquo;m proud to announce that I have completed the next version on a pet project I have been working on for a long time. I haven&amp;rsquo;t been working on it non-stop, in fact it sat for a couple of years, but either way it is now here, better than ever.
+What is it you ask? A ProRes and H.265 encoder for Windows. I call it Frost.
+You can download it at https://www.</description>
+    </item>
+    
+    <item>
+      <title>Perfecting Lazy</title>
+      <link>https://www.derekreinhardt.com/posts/perfecting-lazy/</link>
+      <pubDate>Sun, 22 Jun 2014 00:53:42 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/posts/perfecting-lazy/</guid>
+      <description>I just finished up work on a production last week. It was a great project that will is in the editing room right now. I had some fun designing the workflow for this project, and I will probably right about it in the future because it was a system that I had never tried before and it worked near flawlessly. Instead of that though I wanted to write about something a little more technical today.</description>
+    </item>
+    
+  </channel>
+</rss>

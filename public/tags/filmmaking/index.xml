@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filmmaking on Derek Reinhardt</title>
+    <link>https://www.derekreinhardt.com/tags/filmmaking/</link>
+    <description>Recent content in Filmmaking on Derek Reinhardt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jan 2016 01:31:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.derekreinhardt.com/tags/filmmaking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Filmmaking and Open Source</title>
+      <link>https://www.derekreinhardt.com/posts/filmmaking-and-open-source/</link>
+      <pubDate>Sat, 16 Jan 2016 01:31:00 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/posts/filmmaking-and-open-source/</guid>
+      <description>I have a crazy idea. I&amp;rsquo;m not sure if it will work, but I&amp;rsquo;m going to try and see if I can&amp;rsquo;t make it a reality. I want to make an open-source film, in a fashion I don&amp;rsquo;t think has been attempted.
+I should probably explain what open-source is before I get to far ahead of myself. Open-source is a concept that is heavily used in the programming world. The idea is that all of the source code for a program is available for anyone to download and tweak however they want.</description>
+    </item>
+    
+  </channel>
+</rss>

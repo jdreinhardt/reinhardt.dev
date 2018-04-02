@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Derek Reinhardt</title>
+    <link>https://www.derekreinhardt.com/tags/automation/</link>
+    <description>Recent content in Automation on Derek Reinhardt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Jun 2014 00:53:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.derekreinhardt.com/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perfecting Lazy</title>
+      <link>https://www.derekreinhardt.com/posts/perfecting-lazy/</link>
+      <pubDate>Sun, 22 Jun 2014 00:53:42 +0000</pubDate>
+      
+      <guid>https://www.derekreinhardt.com/posts/perfecting-lazy/</guid>
+      <description>I just finished up work on a production last week. It was a great project that will is in the editing room right now. I had some fun designing the workflow for this project, and I will probably right about it in the future because it was a system that I had never tried before and it worked near flawlessly. Instead of that though I wanted to write about something a little more technical today.</description>
+    </item>
+    
+  </channel>
+</rss>

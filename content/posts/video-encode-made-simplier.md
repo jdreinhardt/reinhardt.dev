@@ -12,7 +12,7 @@ I'm proud to announce that I have completed the next version on a pet project I 
 
 What is it you ask? A ProRes and H.265 encoder for Windows. I call it Frost.
 
-![Frost Main](http://derekreinhardt.com/files/images/frost/frost12main.png)
+![Frost Main](https://www.derekreinhardt.com/files/images/frost/frost12main.png)
 
 You can download it at https://www.derekreinhardt.com/frost or https://bitbucket.org/MylarShoe/frost/downloads/
 
@@ -28,7 +28,7 @@ Frost acts as a sort of middle man taking the files you give it, and sending the
 
 In the beginning all it was was little more than a batch file creator that was then run, and did the renders. It also, was not the most attractive piece of software.
 
-![Frost Old Main](http://derekreinhardt.com/files/images/frost/frost01main.png)
+![Frost Old Main](https://www.derekreinhardt.com/files/images/frost/frost01main.png)
 
 It did get the job done though. I got through a couple versions of "old" Frost and just let it sit. I hadn't structured the code very well, so it was hard to build it out. Because of that it had some serious restrictions, the first coming to mind is that it only allowed other .mov files to be rendered. And so it sat.
 

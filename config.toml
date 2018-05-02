@@ -17,5 +17,5 @@ canonifyUrls = true
 	github_username = "jdreinhardt"
 	bitbucket_username = "MylarShoe"
 	paginate = 10
-	#google_analytics_id = 
+	google_analytics_id = "UA-118581912-1"
 	#search_engine = true

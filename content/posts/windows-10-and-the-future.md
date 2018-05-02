@@ -5,7 +5,7 @@ draft: false
 type: "post"
 author: "derek"
 summary: "Windows 10 has been out for a little over 4 months now. I've had it installed on a vitual machine since then. I like to see what's coming, and get a grasp on it. In the past, with Windows 7, 8, and the 8.1, and the 10 (up to now) betas that is all I've every done. Then my desktop started giving me problems."
-tags: ["windows 10"]
+tags: ["windows"]
 ---
 
 Windows 10 has been out for a little over 4 months now. I've had it installed on a vitual machine since then. I like to see what's coming, and get a grasp on it. In the past, with Windows 7, 8, and the 8.1, and the 10 (up to now) betas that is all I've every done. Then my desktop started giving me problems.

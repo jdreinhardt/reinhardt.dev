@@ -21,4 +21,4 @@ At this point the story becomes less interesting than it already is. I found a t
 
 In the end I sat my Developer Associate exam about 8 months after starting my AWS journey and passed. It was a fun journey that has opened a number of new opportunities and I recommend it to anyone who deals with computers to take the time and learn. "The cloud" may not be the solution to everything, but as long as management thinks that it can solve their problem then there will be a need for people who know it.
 
-![AWS Certified](https://derekreinhardt.com/images/aws_certified.png)
+![AWS Certified](https://www.derekreinhardt.com/images/aws_certified.png)

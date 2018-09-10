@@ -5,7 +5,7 @@ draft: false
 type: "post"
 author: "derek"
 summary: "I have a crazy idea. I'm not sure if it will work, but I'm going to try and see if I can't make it a reality. I want to make an open-source film, in a fashion I don't think has been attempted."
-tags: ["filmmaking", "open source"]
+tags: ["filmmaking", "open-source"]
 ---
 
 I have a crazy idea. I'm not sure if it will work, but I'm going to try and see if I can't make it a reality. I want to make an open-source film, in a fashion I don't think has been attempted.

@@ -1,13 +1,13 @@
----
-title: "Perfecting Lazy"
-date: 2014-06-22T00:53:42.000Z
-draft: false
-type: "post"
-author: "derek"
-summary: "A first attempting at making my onset life easier with python. I decide to automate most of the tedium to free myself to work on other important matters."
-tags: ["dit", "python", "automation"]
-
----
++++
+title = "Perfecting Lazy"
+date = "2014-06-22T00:53:42.000Z"
+author = "derek"
+cover = ""
+tags = ["dit", "python", "automation"]
+keywords = ["", ""]
+description = "A first attempting at making my onset life easier with python. I decide to automate most of the tedium to free myself to work on other important matters."
+showFullContent = false
++++
 
 I just finished up work on a production last week. It was a great project that will is in the editing room right now. I had some fun designing the workflow for this project, and I will probably right about it in the future because it was a system that I had never tried before and it worked near flawlessly. Instead of that though I wanted to write about something a little more technical today.
 

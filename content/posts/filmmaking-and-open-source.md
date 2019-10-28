@@ -1,12 +1,13 @@
----
-title: "Filmmaking and Open Source"
-date: 2016-01-16T01:31:00.000Z
-draft: false
-type: "post"
-author: "derek"
-summary: "I have a crazy idea. I'm not sure if it will work, but I'm going to try and see if I can't make it a reality. I want to make an open-source film, in a fashion I don't think has been attempted."
-tags: ["filmmaking", "open-source"]
----
++++
+title = "Filmmaking and Open Source"
+date = "2016-01-16T01:31:00.000Z"
+author = "derek"
+cover = ""
+tags = ["filmmaking", "open-source"]
+keywords = ["", ""]
+description = "I have a crazy idea. I'm not sure if it will work, but I'm going to try and see if I can't make it a reality. I want to make an open-source film, in a fashion I don't think has been attempted."
+showFullContent = false
++++
 
 I have a crazy idea. I'm not sure if it will work, but I'm going to try and see if I can't make it a reality. I want to make an open-source film, in a fashion I don't think has been attempted.
 

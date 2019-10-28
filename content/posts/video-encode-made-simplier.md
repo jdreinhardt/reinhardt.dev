@@ -1,20 +1,22 @@
----
-title: "Video Encoding Made Simplier"
-date: 2014-07-11T02:18:59.000Z
-draft: false
-type: "post"
-author: "derek"
-summary: "FFmpeg allows for ProRes to be generated on a Windows machine freeing the need for a Mac, but it lives in the command line out of reach of many. While not as feature rich as others may be I make the encode as simple as possible so that video encoding can be simple."
-tags: ["prores", "encode", "ffmpeg"]
----
++++
+title = "Video Encoding Made Simplier"
+date = "2014-07-11T02:18:59.000Z"
+author = "derek"
+draft = false
+cover = ""
+tags = ["prores", "encode", "ffmpeg"]
+keywords = ["", ""]
+description = "FFmpeg allows for ProRes to be generated on a Windows machine freeing the need for a Mac, but it lives in the command line out of reach of many. While not as feature rich as others may be I make the encode as simple as possible so that video encoding can be simple."
+showFullContent = false
++++
 
 I'm proud to announce that I have completed the next version on a pet project I have been working on for a long time. I haven't been working on it non-stop, in fact it sat for a couple of years, but either way it is now here, better than ever.
 
 What is it you ask? A ProRes and H.265 encoder for Windows. I call it Frost.
 
-![Frost Main](https://www.derekreinhardt.com/files/images/frost/frost12main.png)
+![Frost Main](https://reinhardt.dev/files/images/frost/frost12main.png)
 
-You can download it at https://www.derekreinhardt.com/frost or https://bitbucket.org/MylarShoe/frost/downloads/
+You can download it at https://reinhardt.dev/frost or https://bitbucket.org/MylarShoe/frost/downloads/
 
 While most codecs can be played on any platform given the right player not all codecs can be written (made) on every platform. The most notorious in the film world is Apple's ProRes codec family which can be played on Windows and Mac, but only created on a Mac. That was until January of 2012 when the open-sourced project [FFmpeg](http://ffmpeg.org) added support for the format. That was a great day finally people were not limited to which operating system they used if they wanted to make ProRes files. 
 
@@ -28,7 +30,7 @@ Frost acts as a sort of middle man taking the files you give it, and sending the
 
 In the beginning all it was was little more than a batch file creator that was then run, and did the renders. It also, was not the most attractive piece of software.
 
-![Frost Old Main](https://www.derekreinhardt.com/files/images/frost/frost01main.png)
+![Frost Old Main](https://reinhardt.dev/files/images/frost/frost01main.png)
 
 It did get the job done though. I got through a couple versions of "old" Frost and just let it sit. I hadn't structured the code very well, so it was hard to build it out. Because of that it had some serious restrictions, the first coming to mind is that it only allowed other .mov files to be rendered. And so it sat.
 
@@ -46,6 +48,6 @@ A note to the users. The layout and support for H.265 is still new, so the confi
 
 So now, I've done the full rewrite, and it works great. With the old version it was never able to use the full extents of my CPU for rendering, but with the new version it will use as much processing power as is available, making the renders much faster. It only supports one render at a time right now, but adding support for a render queue is high on the list of features to add.
 
-It is still very much an early version, so I want you to tell me what I should add to it, to make it the most useful for you. Or if you encounter any problems I want to [hear about it](https://www.derekreinhardt.com/contact).
+It is still very much an early version, so I want you to tell me what I should add to it, to make it the most useful for you. Or if you encounter any problems I want to [hear about it](https://reinhardt.dev/contact/index.html).
 
-Go to https://www.derekreinhardt.com/frost to download Frost and give it a try. You will need to download a copy of FFmpeg for it to work. But you can do that [here](http://ffmpeg.zeranoe.com/builds). Download the 32-bit or 64-bit Static build. If you aren't sure which one your system supports download the 32-bit to be safe, or the 64-bit to be adventurous. Then copy the ffmpeg.exe file from the bin folder into the folder where you have Frost.exe.
+Go to https://reinhardt.dev/frost to download Frost and give it a try. You will need to download a copy of FFmpeg for it to work. But you can do that [here](http://ffmpeg.zeranoe.com/builds). Download the 32-bit or 64-bit Static build. If you aren't sure which one your system supports download the 32-bit to be safe, or the 64-bit to be adventurous. Then copy the ffmpeg.exe file from the bin folder into the folder where you have Frost.exe.

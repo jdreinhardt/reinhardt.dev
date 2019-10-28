@@ -1,11 +1,11 @@
 ---
-title: "Frost"
-date: 2018-04-01T10:35:40-06:00
+title: "frost"
 draft: false
+type: "page"
 url: "frost"
 ---
 
-<center>![Frost](https://www.derekreinhardt.com/images/frost.png)</center>
+<center>![Frost](https://reinhardt.dev/images/frost.png)</center>
 
 Frost is the simplest way to render ProRes 422 files and H.265 files on Windows. It has been designed to give you a lot of control without having to know all the command line flags to render using FFmpeg.
 

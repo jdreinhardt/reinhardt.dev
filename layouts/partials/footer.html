@@ -1,21 +1,32 @@
-    <footer class="footer">
-      <div class="p2 wrap">
-        <div class="measure mt1 center">
-      {{ partial "social_links.html" . }}
-          <small>
-            Copyright &#169; 2018<br>
-            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> &amp; <a href="https://github.com/azmelanar/hugo-theme-pixyll" target="_blank">Pixyll</a>
-          </small>
-        </div>
+<footer class="footer">
+  <nav class="social-icons icons" style="float:none">
+      <a class="fa fa-rss rss" href="/index.xml"></a>
+      {{ if isset .Site.Params "twitter_username" }}
+      <a class="fa fa-twitter twitter" href="https://twitter.com/{{ .Site.Params.twitter_username }}"></a>
+      {{ end }}
+      {{ if isset .Site.Params "github_username" }}
+      <a class="fa fa-github github" href="https://github.com/{{ .Site.Params.github_username }}"></a>
+      {{ end }}
+      <!-- {{ if isset .Site.Params "bitbucket_username" }}
+      <a class="fa fa-bitbucket bitbucket" href="https://bitbucket.org/{{ .Site.Params.bitbucket_username }}"></a>
+      {{ end }} -->
+  </nav>
+  <div class="footer__inner">
+    {{ if $.Site.Copyright }}
+      <div class="copyright copyright--user">
+        <span>{{ $.Site.Copyright | safeHTML }}</span>
+    {{else}}
+      <div class="copyright">
+        <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>
+    {{end}}
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>
-    </footer>
+  </div>
+</footer>
 
-    <!-- Highlight -->
-    <script src="/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+<script src="{{ "assets/main.js" | absURL }}"></script>
+<script src="{{ "assets/prism.js" | absURL }}"></script>
 
-    <!-- Google Analytics -->
-    {{ partial "google_analytics.html" . }}
-
-</body>
-</html>
+<!-- Extended footer section-->
+{{ partial "extended_footer.html" . }}
+{{ template "_internal/google_analytics.html" . }}

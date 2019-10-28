@@ -1,12 +1,14 @@
----
-title: "DRU (DIVA Resource for Users)"
-date: 2019-07-31T10:13:19-06:00
-draft: false
-type: "post"
-author: "derek"
-summary: "DIVArchive is great at what it does, but sometimes you need to fill a gap in the product and the workflow. Thankfully there are APIs we can use for that."
-tags: ["diva", "media", "open-source"]
----
++++
+title = "DRU (DIVA Resource for Users)"
+date = "2019-07-31T10:13:19-06:00"
+author = "derek"
+draft = false
+cover = ""
+tags = ["diva", "media", "open-source"]
+keywords = ["", ""]
+description = "DIVArchive is great at what it does, but sometimes you need to fill a gap in the product and the workflow. Thankfully there are APIs we can use for that."
+showFullContent = false
++++
 
 I have spent most of my professional career working on the technical side of media. During that time I have spent a lot of time working with asset management systems and helping to better integrate them into workflows. One of the systems found (previously) at several sites is Oracle's DIVArchive, formerly by FrontPorch Digital. 
 
@@ -24,4 +26,4 @@ In its current state DRU will run from any web browser and supports the followin
 
 *DRU is available on [Github](https://github.com/jdreinhardt/dru). You can find the installation guide and complete documentation there.* 
 
-![dru_search](https://www.derekreinhardt.com/images/dru_search.png)
+![dru_search](https://reinhardt.dev/images/dru_search.png)

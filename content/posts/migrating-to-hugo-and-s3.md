@@ -1,12 +1,13 @@
----
-title: "Migrating to Hugo and S3"
-date: 2018-05-01T20:21:19-06:00
-draft: false
-type: "post"
-author: "derek"
-summary: "When hosting costs have got you down, the only logical thing to do is migrate your entire website. This is my journey from a shared webhost to a static S3 website."
-tags: ["s3", "aws", "hugo"]
----
++++
+title = "Migrating to Hugo and S3"
+date = "2018-05-01T20:21:19-06:00"
+author = "derek"
+cover = ""
+tags = ["s3", "aws", "hugo"]
+keywords = ["", ""]
+description = "When hosting costs have got you down, the only logical thing to do is migrate your entire website. This is my journey from a shared webhost to a static S3 website."
+showFullContent = false
++++
 
 #### Background
 For many years I was using A Small Orange for my webhosting. The price was great, and it gave me more than enough features to work with. I hosted a number of small sites on my account, this one included. Then a couple of months ago my renewal notice came my price was going up from $50 a year to $86. This was a little too high for me with the relatively low amount of traffic that I got on any of my sites, so I started look at other options. I started with other shared hosts or even some of the smaller VPS hosts, and A Small Orange's rate seemed more and more in line with what I could expect. During this time I was in the middle of getting AWS certified and was looking at the possibilities of using S3. It was an appealing option, but it required a static html website which meant migrating because my now former site ran on a [Ghost](https://ghost.org/) backend. So, I started looking at static website generators. I first found [Jekyll](https://jekyllrb.com/) (which runs all Github pages) and started playing with it. It was very cool, but I had some weird issues getting it working, so I kept looking and found [Hugo](https://gohugo.io/). Hugo solved all the issues I had with Jekyll and within 30 minutes I had a very rough version of my site up and working. I especially liked the fact that I didn't have to setup a Ruby environment to compile; Hugo is a single binary you run from the site directory and you are done.

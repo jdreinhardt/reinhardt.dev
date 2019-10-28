@@ -1,21 +1,48 @@
-baseURL = "https://www.derekreinhardt.com/"
+baseurl = "https://reinhardt.dev/"
 languageCode = "en-us"
-title = "Derek Reinhardt"
-theme = "pixyll"
-canonifyurls = true
-contentdir = "content"
-publishdir = "public"
-canonifyUrls = true
-
-[indexes]
-	category = "categories"
-	tag = "tags"
+theme = "terminal"
+paginate = 10
+googleAnalytics = "UA-118581912-1"
 
 [params]
-	description = "The musings of Derek Reinhardt"
-	twitter_username = "jderekreinhardt"
-	github_username = "jdreinhardt"
-	bitbucket_username = "MylarShoe"
-	paginate = 10
-	google_analytics_id = "UA-118581912-1"
-	#search_engine = true
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "green"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+  # show selector to switch language
+  showLanguageSelector = false
+  # set theme to full screen width
+  fullWidthTheme = false
+  # center theme with default width
+  centerTheme = true
+  # set a custom favicon (default is a `themeColor` square)
+  favicon = "favicon.ico"
+  twitter_username = "jderekreinhardt"
+  github_username = "jdreinhardt"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "reinhardt.dev"
+    subtitle = "/dev/null"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "read more"
+
+    [languages.en.params.logo]
+      logoText = "reinhardt.dev"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "/about/index.html"
+      [[languages.en.menu.main]]
+        identifier = "contact"
+        name = "contact"
+        url = "/contact/index.html"

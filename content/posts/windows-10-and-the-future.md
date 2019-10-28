@@ -1,12 +1,14 @@
----
-title: "Windows 10 and the Future"
-date: 2015-01-28T22:56:08.000Z
-draft: false
-type: "post"
-author: "derek"
-summary: "Windows 10 has been out for a little over 4 months now. I've had it installed on a vitual machine since then. I like to see what's coming, and get a grasp on it. In the past, with Windows 7, 8, and the 8.1, and the 10 (up to now) betas that is all I've every done. Then my desktop started giving me problems."
-tags: ["windows"]
----
++++
+title = "Windows 10 and the Future"
+date = "2015-01-28T22:56:08.000Z"
+author = "derek"
+draft = false
+cover = ""
+tags = ["windows"]
+keywords = ["", ""]
+description = "Windows 10 has been out for a little over 4 months now. I've had it installed on a vitual machine since then. I like to see what's coming, and get a grasp on it. In the past, with Windows 7, 8, and the 8.1, and the 10 (up to now) betas that is all I've every done. Then my desktop started giving me problems."
+showFullContent = false
++++
 
 Windows 10 has been out for a little over 4 months now. I've had it installed on a vitual machine since then. I like to see what's coming, and get a grasp on it. In the past, with Windows 7, 8, and the 8.1, and the 10 (up to now) betas that is all I've every done. Then my desktop started giving me problems.
 

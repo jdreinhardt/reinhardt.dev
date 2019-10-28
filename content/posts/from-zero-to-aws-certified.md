@@ -1,12 +1,13 @@
----
-title: "From Zero to AWS Certified"
-date: 2018-09-09T14:25:45-05:00
-draft: false
-type: "post"
-author: "derek"
-summary: "When everything is moving the cloud you should probably learn it because the cloud can solve all the problems (right?)"
-tags: ["aws", "cloud"]
----
++++
+title = "From Zero to AWS Certified"
+date = "2018-09-09T14:25:45-05:00"
+author = "derek"
+cover = ""
+tags = ["aws", "cloud"]
+keywords = ["", ""]
+description = "When everything is moving the cloud you should probably learn it because the cloud can solve all the problems (right?)"
+showFullContent = false
++++
 
 Okay, so the title is a little misleading. Zero is more of a statement on my understanding of cloud technologies than it is about computing. So, really this should be 
 
@@ -21,4 +22,4 @@ At this point the story becomes less interesting than it already is. I found a t
 
 In the end I sat my Developer Associate exam about 8 months after starting my AWS journey and passed. It was a fun journey that has opened a number of new opportunities and I recommend it to anyone who deals with computers to take the time and learn. "The cloud" may not be the solution to everything, but as long as management thinks that it can solve their problem then there will be a need for people who know it.
 
-![AWS Certified](https://www.derekreinhardt.com/images/aws_certified.png)
+![AWS Certified](https://reinhardt.dev/images/aws_certified.png)

@@ -1,12 +1,13 @@
----
-title: "Hacktoberfest"
-date: 2018-11-06T23:55:01-05:00
-draft: false
-type: "post"
-author: "derek"
-summary: "As a self proclaimed small-time coder I've always been scared to contribute to open-source projects, but I decided to change that."
-tags: ["github", "open-source","digital-ocean"]
----
++++
+title = "Hacktoberfest"
+date = "2018-11-06T23:55:01-05:00"
+author = "derek"
+cover = ""
+tags = ["github", "open-source","digital-ocean"]
+keywords = ["", ""]
+description = "As a self proclaimed small-time coder I've always been scared to contribute to open-source projects, but I decided to change that."
+showFullContent = false
++++
 
 I am not a professional developer, nor will I ever claim to be one. My code is nothing amazing, but that's not the point. I enjoying programming and try and put my little programs and scripts up on Github. I like working on my projects, but I have never worked on a bigger project or a multi-contributor project. I looked at the big open-source projects I used all the time and wanted to help, but didn't feel like I could contribute anything meaningful to them. 
 

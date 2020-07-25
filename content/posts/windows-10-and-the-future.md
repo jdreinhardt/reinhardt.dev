@@ -12,13 +12,13 @@ showFullContent = false
 
 Windows 10 has been out for a little over 4 months now. I've had it installed on a vitual machine since then. I like to see what's coming, and get a grasp on it. In the past, with Windows 7, 8, and the 8.1, and the 10 (up to now) betas that is all I've every done. Then my desktop started giving me problems.
 
-![Univeral Applications](http://onsitepcsolution.com/wp-content/uploads/2014/10/windows10_Universal_Apps.png)
+![Univeral Applications](/images/windows10.png)
 
 Let me lay a little bit of ground work. I usually reinstall the OS on my desktop every 12-18 months. I like the feel of a nice new install and it just makes things run a little smoother in general. I work with a lot of programs that push my computer to its limits. And, I like using the newest things that my system has to offer. So, a couple months ago Windows started being sluggish, it was fairly common for it to crash in the middle of something, and some programs just would even start. It seemed like a good time to reinstall. But instead of reinstalling 8.1 I decided to jump up to the pre-release version of Windows 10.
 
 Unfortunately, it was not a simple process, but that is why this is still a technical preview. I tried the upgrade path first. Which is installing Windows 10 over my existing Windows 8.1 installation. The best part, had it worked, would have been not having to go through and reinstall all the software that I use. It seemed like the update had worked until things still kept crashing, I couldn't search for anything, and other various problems. After several attempts at fixing things I gave up and decided it would be easier to do it fresh.
 
-![Windows 10](/blog/content/images/2015/01/650_1000_windows-10-9926.png)
+![Windows 10](/images/windows-10-beta.png)
 
 Fast forward 12 hours and, Tada! I working install of Windows 10 on my desktop. I discovered a couple of problems that I needed to fix along the way, but everything is now up and running. My system no longer crashes, and everything is working as it should.
 

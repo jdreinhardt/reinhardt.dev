@@ -14,9 +14,9 @@ I'm proud to announce that I have completed the next version on a pet project I 
 
 What is it you ask? A ProRes and H.265 encoder for Windows. I call it Frost.
 
-![Frost Main](https://reinhardt.dev/files/images/frost/frost12main.png)
+![Frost Main](/images/frost_new.png)
 
-You can download it at https://reinhardt.dev/frost or https://bitbucket.org/MylarShoe/frost/downloads/
+You can download it at [https://reinhardt.dev/frost](https://reinhardt.dev/frost) or [https://bitbucket.org/MylarShoe/frost/downloads/](https://bitbucket.org/MylarShoe/frost/downloads/)
 
 While most codecs can be played on any platform given the right player not all codecs can be written (made) on every platform. The most notorious in the film world is Apple's ProRes codec family which can be played on Windows and Mac, but only created on a Mac. That was until January of 2012 when the open-sourced project [FFmpeg](http://ffmpeg.org) added support for the format. That was a great day finally people were not limited to which operating system they used if they wanted to make ProRes files. 
 
@@ -30,7 +30,7 @@ Frost acts as a sort of middle man taking the files you give it, and sending the
 
 In the beginning all it was was little more than a batch file creator that was then run, and did the renders. It also, was not the most attractive piece of software.
 
-![Frost Old Main](https://reinhardt.dev/files/images/frost/frost01main.png)
+![Frost Old Main](/images/frost_old.png)
 
 It did get the job done though. I got through a couple versions of "old" Frost and just let it sit. I hadn't structured the code very well, so it was hard to build it out. Because of that it had some serious restrictions, the first coming to mind is that it only allowed other .mov files to be rendered. And so it sat.
 
@@ -48,6 +48,6 @@ A note to the users. The layout and support for H.265 is still new, so the confi
 
 So now, I've done the full rewrite, and it works great. With the old version it was never able to use the full extents of my CPU for rendering, but with the new version it will use as much processing power as is available, making the renders much faster. It only supports one render at a time right now, but adding support for a render queue is high on the list of features to add.
 
-It is still very much an early version, so I want you to tell me what I should add to it, to make it the most useful for you. Or if you encounter any problems I want to [hear about it](https://reinhardt.dev/contact/index.html).
+It is still very much an early version, so I want you to tell me what I should add to it, to make it the most useful for you. Or if you encounter any problems I want to [hear about it]( {{< ref "contact.md" >}} ).
 
-Go to https://reinhardt.dev/frost to download Frost and give it a try. You will need to download a copy of FFmpeg for it to work. But you can do that [here](http://ffmpeg.zeranoe.com/builds). Download the 32-bit or 64-bit Static build. If you aren't sure which one your system supports download the 32-bit to be safe, or the 64-bit to be adventurous. Then copy the ffmpeg.exe file from the bin folder into the folder where you have Frost.exe.
+Go to [https://reinhardt.dev/frost]( {{< ref "frost.md" >}} ) to download Frost and give it a try. You will need to download a copy of FFmpeg for it to work, but you can get that [here](http://ffmpeg.zeranoe.com/builds). Download the 32-bit or 64-bit Static build. If you aren't sure which one your system supports download the 32-bit to be safe, or the 64-bit to be adventurous. Then copy the ffmpeg.exe file from the bin folder into the folder where you have Frost.exe.

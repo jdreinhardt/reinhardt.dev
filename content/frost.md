@@ -5,7 +5,7 @@ type: "page"
 url: "frost"
 ---
 
-<center>![Frost](https://reinhardt.dev/images/frost.png)</center>
+<center><img src="/images/frost.png" alt="Frost"></center>
 
 Frost is the simplest way to render ProRes 422 files and H.265 files on Windows. It has been designed to give you a lot of control without having to know all the command line flags to render using FFmpeg.
 
@@ -14,7 +14,7 @@ Frost is the simplest way to render ProRes 422 files and H.265 files on Windows.
 * A copy of the FFmpeg binary
 * .NET 4.0 or higher
 
-<center>[Download Here](https://bitbucket.org/MylarShoe/frost/downloads/Frost_1.4.zip)</center>
+<center><a href="https://bitbucket.org/MylarShoe/frost/downloads/Frost_1.4.zip">Download Here</a></center>
 
 What Frost does is allow you to render any file you want to ProRes on the Windows platform, complete with options to rescale the video, remove the audio, and copy timecode over to the rendered file. The file support for input formats is always expanding. Frost also supports rendering to the all new H.265 format. If you would like to use this I recommend using Media Player Classic or VLC to playback the files. If you have any format you would like to see supported, or anything for that matter please submit it at derekreinhardt.com/frost_support. That is also the address to submit a problem you are having.
 

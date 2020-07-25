@@ -15,7 +15,9 @@ On this latest production I was working as the DIT (Digital Imaging Technician) 
 
 There is a great utility called rsync in the Unix world that does file synchronization. It does a lot more than what I used it for, but for my purposes it was the simpliest method since it comes preinstalled on Mac. Now what I could have done is just have a bunch of rsync commands typed up like this 
 
-<code>rsync -arv --exclude '/01. RAW Assets' /Volumes/BEYOND_RAID/01.\\ Video\\ Assets/ /Volumes/Beyond_BU01/01.\\ Video\\ Assets</code> 
+```
+rsync -arv --exclude '/01. RAW Assets' /Volumes/BEYOND_RAID/01.\\ Video\\ Assets/ /Volumes/Beyond_BU01/01.\\ Video\\ Assets
+```
 
 and just copy them into the terminal to run them when I needed, but that allowed for a lot of user error, so I busted out Python. 
 
@@ -24,13 +26,17 @@ Python is a scripted language that allows for fast development, and testing sinc
 **A disclaimer for the code you are about to look at. It was all written on set, so it is not very optimized, or clean. I was just trying to get it to work correctly as fast as possible.**
 
 Anyway, my first thought was that I should just make it so that it would backup everything to the Shuttle Drives that we are using. Then I don't have to worry, everything makes its way to the backup drive, as long as it makes it onto the main RAID we were using. The raw footage from the camera was already being backed up to the drive using a program that copied and verified everything for me. (We were using a RED Epic for the shoot with DoubleData as the primary data management system). Lets look at where that one started.
+
 ```
 import os
 os.system("rsync -arv --exclude '/01. RAW Assets' /Volumes/BEYOND_RAID/01.\ Video\ Assets/ /Volumes/Beyond_BU01/01.\ Video\ Assets")
 os.system("rsync -arv /Volumes/BEYOND_RAID/02.\ Audio\ Assets/ /Volumes/Beyond_BU01/02.\ Audio\ Assets")    
 ```
+
 Python is really fast, so we load the OS layer 
-<code>import os</code>, then call a system function <code>os.system(...)</code> that is the rsync command. Simple and effective. Then I save that file as backup.py and can run it in the terminal like this <code>python backup.py</code> \n\nThat seemed to easy though. With a Mac you can change the extension of the file and make it run on a double click. You have to make a few changes first to the file. You add this <code>#! /usr/bin/env python</code> to the top of your file, save it. Then in terminal run this <code>chmod u+x backup.py</code> After all that just change the .py to .command and I had a fully functional double click and run program that would backup my assets to a secondary drive.
+`import os`, then call a system function <code>os.system(...)</code> that is the rsync command. Simple and effective. Then I save that file as backup.py and can run it in the terminal like this `python backup.py` 
+
+That seemed to easy though. With a Mac you can change the extension of the file and make it run on a double click. You have to make a few changes first to the file. You add this `#! /usr/bin/env python` to the top of your file, save it. Then in terminal run this `chmod u+x backup.py` After all that just change the `.py` to `.command` and I had a fully functional double click and run program that would backup my assets to a secondary drive.
 
 After doing this I had the programming itch, so I decided to see what else I could automate. I started with getting the sound files from the CF card they were recorded to, to the main RAID. 
 
@@ -86,4 +92,4 @@ I was free, but I had one last thing I could simplify for myself. At the beginin
 
 I know this was long and program-y, but thanks for sticking with it. I promise not everything will be like this. I just wanted to document this process for myself. Below is a link to download a ZIP file with all the scripts, so you can look them over, or use them if you want.
 
-[Download all the Scripts Here](https://dl.dropboxusercontent.com/u/6910936/blog/Scripts.zip)
+[Download all the Scripts Here](https://www.dropbox.com/s/h8b98p5pro4sfdf/Scripts.zip?dl=0)

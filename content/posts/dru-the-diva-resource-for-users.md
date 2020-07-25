@@ -26,4 +26,4 @@ In its current state DRU will run from any web browser and supports the followin
 
 *DRU is available on [Github](https://github.com/jdreinhardt/dru). You can find the installation guide and complete documentation there.* 
 
-![dru_search](https://reinhardt.dev/images/dru_search.png)
+![dru_search](/images/dru_search.png)

@@ -1,8 +1,8 @@
-baseurl = "https://reinhardt.dev/"
+baseurl = "/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 10
-googleAnalytics = "UA-118581912-1"
+googleAnalytics = ""
 
 [params]
   # dir name of your blog content (default is `content/posts`)
@@ -21,6 +21,9 @@ googleAnalytics = "UA-118581912-1"
   favicon = "favicon.ico"
   twitter_username = "jderekreinhardt"
   github_username = "jdreinhardt"
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [languages]
   [languages.en]
@@ -41,8 +44,8 @@ googleAnalytics = "UA-118581912-1"
       [[languages.en.menu.main]]
         identifier = "about"
         name = "about"
-        url = "/about/index.html"
+        url = "/about/"
       [[languages.en.menu.main]]
         identifier = "contact"
         name = "contact"
-        url = "/contact/index.html"
+        url = "/contact/"
